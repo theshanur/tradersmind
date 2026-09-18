@@ -24,7 +24,7 @@ export default function ProblemSection() {
             <h2 className="text-2xl leading-tight font-bold text-[#1B2559] max-w-62.5">
               Why Most Traders Miss Good Signals
             </h2>
-            <p className="font-dm-sans text-xs leading-relaxed text-[#6B6B8C]">
+            <p className="font-dm-sans text-sm leading-relaxed text-[#6B6B8C]">
               Most signal providers send signals at random times. If you are
               busy, sleeping, working or driving — you might miss the best
               opportunities.
