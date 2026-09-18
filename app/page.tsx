@@ -3,6 +3,7 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 import ProblemSection from "@/components/problem-section";
 import { CircleCheck } from "lucide-react";
 import Image from "next/image";
+import SolutionSection from "@/components/solution-section";
 
 export default function Home() {
   return (
@@ -226,6 +227,8 @@ export default function Home() {
       </section>
       {/* Problem Section */}
       <ProblemSection />
+      {/* Solution Section */}
+      <SolutionSection />
     </main>
   );
 }
