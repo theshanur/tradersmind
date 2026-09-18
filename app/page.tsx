@@ -1,69 +1,231 @@
+import { Button } from "@/components/ui/button";
+import { NumberTicker } from "@/components/ui/number-ticker";
+import ProblemSection from "@/components/problem-section";
+import { CircleCheck } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="">
+      {/* Hero Section */}
+      <section className="max-w-6xl mx-auto py-20">
+        <div className="flex items-center">
+          <div className="w-1/3 space-y-8">
+            <div className="space-y-2">
+              <span className="text-xs text-[#3346C8] font-medium bg-[#E8EDFF] px-2 py-1 rounded inline-block">
+                AI TRADING INFRASTRUCTURE
+              </span>
+              <h1 className="text-4xl font-bold text-[#2D3958] leading-tight">
+                Launch Your Own{" "}
+                <span className="bg-linear-to-r from-[#134eec] to-[#6225f0] bg-clip-text text-transparent">
+                  {" "}
+                  <br />
+                  AI Trading Signal Bot
+                </span>{" "}
+                <br />
+                on Telegram
+              </h1>
+            </div>
+            <p className=" text-[#8888b6] max-w-sm w-full font-dm-sans text-sm">
+              Empower your community with smart trading signals, built for
+              performance, trust, and long-term growth.
+            </p>
+            <ul className="flex gap-2 text-sm">
+              <li className="flex items-center gap-1">
+                <CircleCheck className="w-4 h-4 text-[#5926E0]" /> Signals On
+                Demand
+              </li>
+              <li className="flex items-center gap-1">
+                <CircleCheck className="w-4 h-4 text-[#5926E0]" /> 1-Year
+                Credits
+              </li>
+              <li className="flex items-center gap-1">
+                <CircleCheck className="w-4 h-4 text-[#5926E0]" /> White Label
+                Bot
+              </li>
+            </ul>
+            <div className="flex gap-4">
+              <Button
+                variant="default"
+                size="lg"
+                className="h-11 px-5 bg-[#5926E0]">
+                Get Free Demo
+              </Button>
+              <Button variant="outline" size="lg" className="h-11 px-5">
+                Become an Agent
+              </Button>
+            </div>
+          </div>
+          <div className="w-2/3 flex justify-end items-end">
             <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+              src="/images/Group_7.png"
+              alt="420-Active-Agents"
+              width={650}
+              height={500}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+          {/* <div className="w-2/3 flex items-center">
+            <div>
+              <Image
+                src="/images/420-Active-Agents.jpg"
+                alt="420-Active-Agents"
+                width={150}
+                height={200}
+              />
+            </div>{" "}
+            <div className="relative">
+              <Image
+                src="/images/Phone-Screen.png"
+                alt="Hero Image"
+                width={600}
+                height={500}
+              />
+            </div>
+            <div className="">
+              <Image
+                src="/images/Character.png"
+                alt="Hero Image"
+                width={350}
+                height={500}
+              />
+            </div>
+            <div>
+              <Image
+                src="/images/image-right.png"
+                alt="image-right"
+                width={150}
+                height={200}
+              />
+            </div>{" "}
+          </div> */}
         </div>
-      </main>
-    </div>
+        <div className="flex items-center justify-between rounded-2xl p-4 shadow-xl bg-white">
+          <div className="flex items-center gap-2 px-5">
+            <div>
+              <Image
+                src="/images/500-Active-Agents.png"
+                alt="Group_8"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div>
+              <NumberTicker
+                value={500}
+                className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+              />{" "}
+              +<p className="text-xs">Active Agents</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-5">
+            <div>
+              <Image
+                src="/images/10K-Active-Users.png"
+                alt="Group_8"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div>
+              <span>
+                <NumberTicker
+                  value={10}
+                  className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+                />{" "}
+                K+
+              </span>
+
+              <p className="text-xs">Active Users</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-5">
+            <div>
+              <Image
+                src="/images/1M-Signal-Generated.png"
+                alt="Group_8"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div>
+              <span>
+                <NumberTicker
+                  value={1}
+                  className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+                />{" "}
+                M+
+              </span>
+              <p className="text-xs">Signals Generated</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-5">
+            <div>
+              <Image
+                src="/images/50-Countries.png"
+                alt="Group_8"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div>
+              <span>
+                <NumberTicker
+                  value={50}
+                  className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+                />{" "}
+                +
+              </span>
+              <p className="text-xs">Countries</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-5">
+            <div>
+              <Image
+                src="/images/100_-Secure-Payment.png"
+                alt="100_-Secure-Payment"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div>
+              <span>
+                <NumberTicker
+                  value={100}
+                  className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+                />{" "}
+                %
+              </span>
+              <p className="text-xs">Secure Payments</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 px-5">
+            <div>
+              <Image
+                src="/images/24-7-AI-Support.png"
+                alt="24-7-AI-Support"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div>
+              <span>
+                <NumberTicker
+                  value={24}
+                  className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+                />{" "}
+                /
+                <NumberTicker
+                  value={7}
+                  className="text-lg font-medium tracking-tighter whitespace-pre-wrap text-black dark:text-white"
+                />
+              </span>
+              <p className="text-xs">AI Support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Problem Section */}
+      <ProblemSection />
+    </main>
   );
 }
