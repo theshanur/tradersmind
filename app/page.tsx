@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto py-20">
+      <section className="max-w-7xl mx-auto pt-10">
         <div className="flex items-center">
           <div className="w-1/3 space-y-8">
             <div className="space-y-2">
@@ -99,7 +99,7 @@ export default function Home() {
             </div>{" "}
           </div> */}
         </div>
-        <div className="flex items-center justify-between rounded-2xl p-4 shadow-xl bg-white">
+        <div className="flex items-center justify-between rounded-2xl p-4 shadow-xl bg-white max-w-6xl mx-auto">
           <div className="flex items-center gap-2 px-5">
             <div>
               <Image
