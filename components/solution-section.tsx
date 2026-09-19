@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Check, X } from "lucide-react";
+import { Check } from "lucide-react";
 import { Button } from "./ui/button";
 
 const problems = [
@@ -31,7 +29,6 @@ export default function SolutionSection() {
             </p>
             <Button className="bg-[#410dfc] h-11 px-5">Enquire Now</Button>
           </div>
-
           <div className="grid min-w-0 flex-1 grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6"></div>
         </div>
       </div>

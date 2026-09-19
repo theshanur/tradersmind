@@ -4,6 +4,7 @@ import ProblemSection from "@/components/problem-section";
 import { CircleCheck } from "lucide-react";
 import Image from "next/image";
 import SolutionSection from "@/components/solution-section";
+import LiveBotSection from "@/components/live-bot-section";
 
 export default function Home() {
   return (
@@ -229,6 +230,8 @@ export default function Home() {
       <ProblemSection />
       {/* Solution Section */}
       <SolutionSection />
+      {/* Live Bot Section */}
+      <LiveBotSection />
     </main>
   );
 }
